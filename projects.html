@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Rakibul Hassan | Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="navlist">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./education.html">Education & Achievement</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="projects">
+        <h1 class="projects-headline">My Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <h2>Project 1: Internet Speed Test</h2>
+                <p>Internet Speed Test is a Python command-line tool that measures download and upload speeds using the
+                    speedtest-cli module.</p>
+                <a href="https://github.com/RR0327/Internet-Speed-Test" target="_blank">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Project 2: Campus Transport Management System (CTMS)</h2>
+                <p>Campus Transport Management System is a web-based platform for efficient campus transportation. It
+                    includes bus tracking, automated email alerts, QR code cards, and staff access. Administrators have
+                    a dashboard to manage all transport services easily.</p>
+                <a href="https://github.com/RR0327/Project-CTMS" target="_blank">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>Project 3: Hablu's Heartbreak</h2>
+                <p>A Django REST Framework project to help "Hablu" level up in life — academically, socially, mentally,
+                    and professionally.</p>
+                <a href="https://github.com/RR0327/Hablu-mission-complete" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Md Rakibul Hassan | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.menu-toggle').addEventListener('click', () => {
+                document.querySelector('.navlist').classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

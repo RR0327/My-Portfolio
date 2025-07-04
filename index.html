@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Md Rakibul Hassan | Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="navlist">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./education.html">Education & Achievement</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="portfolio_container">
+        <div class="left_container">
+            <div class="content">
+                <p class="intro">Hi! I am <span> Md Rakibul Hassan</span></p>
+                <h1>Web Developer</h1>
+                <h2>Backend Specialist</h2>
+                <p class="details">My name is Md Rakibul Hassan. Passionate Junior Computer Scientist with Expertise in
+                    Backend Development, Robotics, and IoT Automation.</p>
+                <div class="butn_container">
+                    <button>Contact Me</button>
+                    <button>View Work</button>
+                </div>
+            </div>
+        </div>
+        <div class="right_container"></div>
+        <div class="design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Md Rakibul Hassan | All Rights Reserved</p>
+        <a href="https://www.linkedin.com/in/md-rakibul-hassan-miyaji" target="_blank" class="linkedin-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactBtn = document.querySelector('.butn_container button:nth-child(1)');
+            const workBtn = document.querySelector('.butn_container button:nth-child(2)');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navlist = document.querySelector('.navlist');
+
+            contactBtn.addEventListener('click', () => {
+                window.location.href = 'contact.html';
+            });
+
+            workBtn.addEventListener('click', () => {
+                window.location.href = 'projects.html';
+            });
+
+            menuToggle.addEventListener('click', () => {
+                navlist.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

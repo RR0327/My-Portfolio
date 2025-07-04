@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="navlist">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./education.html">Education & Achievement</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I'm Md Rakibul Hassan, a passionate web developer specializing in backend technologies, with a focus on
+            Django, Python, and IoT automation.</p>
+        <p>I'm always exploring new ways to innovate with technology and aim to build scalable and efficient backend
+            systems.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Md Rakibul Hassan | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.menu-toggle').addEventListener('click', () => {
+                document.querySelector('.navlist').classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
