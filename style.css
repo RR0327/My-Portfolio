@@ -459,41 +459,57 @@ form button:hover {
     }
 
     .content h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .content h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .content .details {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .butn_container button {
-        font-size: 1rem;
-        padding: 0.6rem 1rem;
-        margin: 0.5rem;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem;
     }
 }
 
-/* ===== Subtle Animations ===== */
-button,
-.project-card,
-.sub_class div,
-.sub_class2 div {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* ===== Hamburger Menu ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #262525;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1000;
 }
 
-button:hover,
-.project-card:hover,
-.sub_class div:hover,
-.sub_class2 div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+.menu-toggle {
+    font-size: 1.8rem;
+    color: #ffcd38;
+    cursor: pointer;
+    display: none;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 
 .navlist li a {
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -501,42 +517,7 @@ button:hover,
     color: #ffcd38;
 }
 
-/* ===== Hamburger Menu ===== */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: #262525;
-    z-index: 1000;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 1rem;
-    height: 60px;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    color: #ffcd38;
-    cursor: pointer;
-}
-
-.navlist {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-}
-
-.navlist li a {
-    text-decoration: none;
-    color: aliceblue;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
@@ -552,27 +533,147 @@ header {
         padding: 1rem;
     }
 
-    .navlist li {
-        margin: 1rem 0;
+    .navlist.show {
+        display: grid;
     }
 
-    .navlist.show {
-        display: flex;
+    .navlist li {
+        margin: 0.5rem 0;
     }
 }
 
 /* Footer */
-footer {
+footer.footer {
+    background: #10182F;
     color: aliceblue;
+    width: 100%;
+    margin-top: 50px;
 }
 
-.linkedin-icon {
-    font-size: 24px;
-    color: #0077b5;
-    /* LinkedIn blue */
-    transition: color 0.3s;
+.footer-row {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 40px 20px;
 }
 
-.linkedin-icon:hover {
-    color: #005582;
+.footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer-col .links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col .links li {
+    margin-bottom: 10px;
+}
+
+.footer-col .links a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-col .links a:hover {
+    color: #fff;
+}
+
+.footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.footer-col input {
+    flex: 1;
+    height: 40px;
+    border-radius: 4px;
+    background: none;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+    color: #ccc;
+}
+
+.footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.footer-col .social-icons {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.footer-col .social-icons a {
+    color: #afb6c7;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-col .social-icons a:hover {
+    color: #fff;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer-col form {
+        flex-direction: column;
+    }
+
+    .footer-col input,
+    .footer-col button {
+        width: 100%;
+    }
+
+    .footer-col button {
+        margin-top: 10px;
+    }
 }
