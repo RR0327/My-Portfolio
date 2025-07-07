@@ -5,111 +5,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education & Achievement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="menu-toggle">&#9776;</div>
-        <ul class="navlist">
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./education.html">Education & Achievement</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </header>
-
-    <h1 class="HEADLINE">EDUCATION</h1>
-    <section class="sub_class">
-        <div>
-            <img src="assets/images/ccs.jpg" alt="">
-            <h2>Chittagong Collegiate School</h2>
-            <h3>Group:Science</h3>
-            <h3>GPA:4.78</h3>
-        </div>
-        <div>
-            <img src="assets/images/ccc.jpg" alt="">
-            <h2>Chittagong Collegiate College</h2>
-            <h3>Group:Science</h3>
-            <h3>GPA:5.00</h3>
-        </div>
-        <div>
-            <img src="assets/images/baiust.jpg" alt="">
-            <h2>Bangladesh Army International University of Science and Technology </h2>
-            <h3>Department:CSE</h3>
-            <h3>level 3 | term 2</h3>
-        </div>
-    </section>
-    <h1 class="HEADLINE1">ACHIEVEMENT</h1>
-    <section class="sub_class2">
-        <div class="Python For Beginners Course In-Depth">
-            <img src="assets/images/cer1.jpg" alt="">
-        </div>
-        <div class="devfest2023">
-            <img src="assets/images/cer2.jpg" alt="">
-
-        </div>
-        <div class="Basics of Python">
-            <img src="assets/images/cer3.jpg" alt="">
-
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-row">
-            <div class="footer-col">
-                <h4>Info</h4>
-                <ul class="links">
-                    <li><a href="./about.html">About Me</a></li>
-                    <li><a href="./education.html">Education & Achievement</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Md Rakibul Hassan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./education.html">Education & Achievement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./work.html">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h4>Explore</h4>
-                <ul class="links">
-                    <li><a href="#">Work Experience</a></li>
-                    <li><a href="#">Skills</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <ul class="links">
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Newsletter</h4>
-                <p>Subscribe to our newsletter for updates & offers.</p>
-                <form action="#">
-                    <input type="email" placeholder="Your email" required>
-                    <button type="submit">SUBSCRIBE</button>
-                </form>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/md-rakibul-hassan-miyaji" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://web.facebook.com/rakibul.hassan.0327"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/rakibul_hassan.0327/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/RR0327"><i class="fab fa-github"></i></a>
+        </div>
+    </nav>
+
+    <!-- Education section -->
+    <section class="container my-5 pt-5">
+        <h1 class="text-center text-warning mb-4">EDUCATION</h1>
+        <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light h-100 education-card">
+                <img src="assets/images/ccs.jpg" class="card-img-top rounded-circle p-3" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chittagong Collegiate School</h5>
+                    <p class="card-text">Group: Science<br>GPA: 4.78</p>
                 </div>
             </div>
         </div>
-        <p class="copyright">
-            © 2025 Md Rakibul Hassan | All Rights Reserved
-        </p>
+
+        <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light h-100 education-card">
+                <img src="assets/images/ccc.jpg" class="card-img-top rounded-circle p-3" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chittagong Collegiate College</h5>
+                    <p class="card-text">Group: Science<br>GPA: 5.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light h-100 education-card">
+                <img src="assets/images/baiust.jpg" class="card-img-top rounded-circle p-3" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Bangladesh Army International University of Science and Technology
+                        (BAIUST)</h5>
+                    <p class="card-text">Department: CSE<br>16th Batch</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h1 class="text-center text-warning mb-4">ACHIEVEMENT</h1>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light h-100 education-card">
+                    <img src="assets/images/cer1.jpg" class="card-img-top rounded p-3" alt="Participation in Hackathon">
+                    <h5 class="text-light">Hackathon Participation</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light h-100 education-card">
+                    <img src="assets/images/cer2.jpg" class="card-img-top rounded p-3" alt="devfest2023">
+                    <h5 class="text-light">DevFest 2023 Certificate</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light h-100 education-card">
+                    <img src="assets/images/cer3.jpg" class="card-img-top rounded p-3"
+                        alt="Baiust Junior Inter University Programming Contest">
+                    <h5 class="text-light">BAIUST Programming Contest</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h1 class="text-center text-warning mb-4">CERTIFICATES</h1>
+        <div class="row mt-4">
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light h-100 certificate-card">
+                    <img src="assets/images/cer4.jpg" class="card-img-top rounded p-3" alt="Certificate 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Introduction to Python</h5>
+                        <p class="card-text">Sololearn</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light h-100 certificate-card">
+                    <img src="assets/images/cer5.jpg" class="card-img-top rounded p-3" alt="Certificate 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Python For Beginners Course In-Depth</h5>
+                        <p class="card-text">Udemy</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light h-100 certificate-card">
+                    <img src="assets/images/cer6.jpg" class="card-img-top rounded p-3" alt="Certificate 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Advance LFR Workshop Course</h5>
+                        <p class="card-text">Tech Topia</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <h4>Info</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./about.html" class="text-light">About Me</a></li>
+                        <li><a href="./education.html" class="text-light">Education & Achievement</a></li>
+                        <li><a href="./projects.html" class="text-light">Projects</a></li>
+                        <li><a href="./contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h4>Explore</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./work.html" class="text-light">Work Experience</a></li>
+                        <li><a href="./skills.html" class="text-light">Skills</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h4>Legal</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./terms.html" class="text-light">Terms & Conditions</a></li>
+                        <li><a href="./privacy.html" class="text-light">Privacy Policy</a></li>
+                        <li><a href="./disclaimer.html" class="text-light">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3 text-center">
+                    <h4>Follow Me</h4>
+                    <div class="d-flex justify-content-center gap-3 social-icons">
+                        <a href="https://web.facebook.com/rakibul.hassan.0327" class="text-light"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/rakibul_hassan.0327/" class="text-light"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/md-rakibul-hassan-miyaji" class="text-light"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/RR0327" class="text-light"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <small>&copy; 2025 Md Rakibul Hassan | All Rights Reserved</small>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('.menu-toggle').addEventListener('click', () => {
-                document.querySelector('.navlist').classList.toggle('show');
-            });
-        });
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
