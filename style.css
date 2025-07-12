@@ -117,3 +117,17 @@ footer .social-icons a:hover {
     transform: scale(1.1);
     text-decoration: none;
 }
+
+::placeholder {
+    color: #6652c0;
+}
+
+:-ms-input-placeholder {
+    /* IE 10-11 */
+    color: #6652c0;
+}
+
+::-ms-input-placeholder {
+    /* Edge */
+    color: #6652c0;
+}
